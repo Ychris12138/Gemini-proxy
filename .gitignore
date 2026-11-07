@@ -1,0 +1,11 @@
+.DS_Store
+*.app/
+*.dylib
+*.log
+*.tmp
+.env
+.env.*
+config.json
+build/
+dist/
+__pycache__/
