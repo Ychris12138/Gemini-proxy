@@ -8,6 +8,8 @@ An experimental no-TUN proxy setup for the Gemini macOS app and its built-in Ant
 
 当前仅在一台 Apple Silicon Mac 上验证；Windows 尚不支持，参见 [Windows 可行性说明](WINDOWS-FEASIBILITY.md)。
 
+**如果你用的是独立 Antigravity 或命令行 `agy`**，另有一套只传入代理环境变量的启动器。请看 [Antigravity 免 TUN 安装与登录指南](antigravity/README.md) 或下载 [独立发布包](https://github.com/Ychris12138/Gemini-proxy/releases/tag/antigravity-proxy-v0.1.0)。下文讲的是 Gemini macOS 副本。
+
 ## 测试状态
 
 2026-11-07 在一台 Apple Silicon、macOS 26.6.2、Gemini 1.131.4.1198 的 Mac 上，先用手工隔离副本验证，再从交付 ZIP 全新解压并执行脚本，由用户实际完成生成副本的登录和 Antigravity 测试。观察到 `agy` 子进程连接本地代理，服务从启动到就绪约 4 秒；脚本没有启用 TUN。详见 [测试记录](TEST-RESULTS.md)。
